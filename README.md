@@ -21,26 +21,21 @@ A custom-built, interactive web experience designed to ask the ultimate question
 3.  **Run Locally:** Open `index.html` in any modern web browser.
 4.  **Deploy:** Upload to **GitHub Pages** or **Netlify** to share the link with your Valentine.
 
-## 📂 Project Structure
+## 🛠️ How to Customize (Venue, Date, Time)
 
-* `index.html` - The core logic (HTML/CSS/JS).
-* `song1.mp3` - Audio for Screen 1 (...Ready For It?)
-* `song2.mp3` - Audio for Screen 2 (Cruel Summer)
-* `song3.mp3` - Audio for Screen 3 (Mastermind)
+You can easily change the details on the final "Ticket" screen to match your actual date plans.
 
-## ⚠️ Disclaimer & Copyright
+1.  Open `index.html` in any text editor (Notepad, VS Code, etc.).
+2.  Press **Ctrl+F** (or Cmd+F) and search for **"Your Fav Restaurant"**.
+3.  Replace the text inside the div with your actual plan.
 
-**This project is for personal and educational purposes only.**
-
-* **No Piracy Intended:** This repository does not promote piracy. The code is provided as a template for personal gestures and web development practice.
-* **Audio Rights:** I do not own the rights to the music used in this project. All rights belong to **Taylor Swift** and her respective record labels.
-* **Usage:** If you fork this project, please ensure you own a legal copy of the audio files you use. This project is not intended for commercial distribution.
-
-## 💖 Credits
-
-* Concept & Code: [Your Name/Username]
-* Music & Inspiration: Taylor Swift
-* Confetti Effect: [canvas-confetti](https://github.com/catdad/canvas-confetti)
-
----
-*Are you ready for it?* 🐍💖🕰️
+**Example Change:**
+*Find this block in the code (around line 220):*
+```html
+<div class="ticket-row"> 
+    <div><div class="label">Date</div><div class="value">Feb 14, 2026</div></div> 
+    <div><div class="label">Time</div><div class="value">07:00 PM</div></div> 
+</div>
+<div class="ticket-row"> 
+    <div><div class="label">Venue</div><div class="value">Your Fav Restaurant</div></div> 
+</div>
